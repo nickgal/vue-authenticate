@@ -1146,16 +1146,16 @@ OAuth2.prototype.exchangeForToken = function exchangeForToken (oauth, userData) 
 
     switch(key) {
       case 'code':
-        payload[key] = oauth.code;
+        payload[value] = oauth.code;
         break
       case 'clientId':
-        payload[key] = this$1.providerConfig.clientId;
+        payload[value] = this$1.providerConfig.clientId;
         break
       case 'redirectUri':
-        payload[key] = this$1.providerConfig.redirectUri;
+        payload[value] = this$1.providerConfig.redirectUri;
         break
       default:
-        payload[key] = oauth[key];
+        payload[value] = oauth[key];
     }
   }
 
